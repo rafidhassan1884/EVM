@@ -20,6 +20,8 @@ Outputs of EVM:
 1.	2 digit Seven Segment Displays.
 2.	1 Green and 1 Red LED
 
+![image](https://github.com/rafidhassan1884/EVM/assets/68016200/79f52f57-4388-45fb-ae2c-29561a1b2dcb)
+
 ### Operation of EVM:
 Initially an authenticator starts the voting process by toggling the reset button and clearing the previous state of the machine. Next a voter starts the voting process by entering his/her unique binary ID which is 5 digit long in our case, in the ID switches. The authenticator then presses the checker button to check whether the voter has already voted or not. If the voter hasn’t already voted, a red led turns on. If all other things are okay and red led is on, the authenticator then presses the auth button which latches a register and turns on the green led. If the authenticator mistakenly presses the auth button even though the red led wasn’t on, the green led won’t turn on and the vote won’t be counted. So, this machine has a two-step verification system. 
 
