@@ -29,6 +29,8 @@ As the green led is on, the voter can now cast his vote against one of the three
 
 When switched to counting mode, by switching the Mode Button, the result of the voting can be checked. Actually, the result can be checked at any point during the vote by toggling the Mode button. Pressing the button for each candidate we can see the no of votes received by that candidate whereas pressing the Auth button, total no of votes casted can be viewed.
 
+The operation of this machine is described in hand in ![this video](https://www.youtube.com/watch?v=TLCzB2k_7-E). Unfortunately, the video is in Bengali so it might not be understandable to all. 
+
 ### Function of Each modules:
 1.	**buttonControl:**
 This module registers the press of each candidate button and removes the debouncing effect and gives a register value = 1 as output if the button is pressed for a specific amount of time. The specific time setting can vary according to device as different devices has different debouncing properties.
@@ -49,5 +51,5 @@ This is a BCD to seven segment display decoder. Default value is 0.
 9.	**EVM:**
 This module instantiates all the previous module and connects them in proper way to create a working Electronic Voting Machine
 
-Please feel free to use this code and
+The initial code is taken from ![this github repo](https://github.com/vipinkmenon/votingMachine). Please feel free to use this code and
 help us improve this code by removing redundancy and improving readability.
